@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>hibernate.tutorial</groupId>
+    <artifactId>Hibernate4</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>hibernate.tutorial</groupId>
+  <artifactId>SpringHibernate4</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>SpringHibernate4 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>4.3.0.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.3.0.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>4.3.0.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>4.3.0.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.2.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>6.0.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.9.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jadira.usertype</groupId>
+      <artifactId>usertype.core</artifactId>
+      <version>5.0.0.GA</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <groupId>org.apache.maven.plugins</groupId>
+          <version>3.5.1</version>
+          <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <finalName>SpringHibernate4</finalName>
+  </build>
+</project>
