@@ -1,7 +1,6 @@
 package hibernate.tutorial.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -12,14 +11,18 @@ import java.io.Serializable;
 @Table(name = "TBL_EMP")
 public class Employee implements Serializable{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @Column(name = "FIRST_NAME", nullable = false)
     private String firstName;
 
     private String lastName;
 
     private String department;
 
+    @Column(name = "SALARY", nullable = false)
     private String salary;
 
     public Employee() {
